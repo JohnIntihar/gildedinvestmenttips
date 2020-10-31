@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Gilded Investing Tips</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='css/gitcss.css'>
+</head>
+
+<body>
+        <h1 id='main-title'>Gilded Investing Tips</h1>
+        <h2 id='main-subtitle'>Start your investment search here!</h2>
+            <p class='main-text'>At Gilded Investing Tips, the goal is to be a starting place for beginner investors who need help finding potential investment products.
+                <br><br>
+                The entire universe of investment products can be enigmatic and overwhelming. With there being literally thousands of choices to start shifting through, GIT is here to help.</p>
+
+                <main class="form-and-output">        
+                    <form name="investment-form" class='investment-form'>
+                        <div class='form-group'>
+                            <label for="investmentHorizon">Investment Horizon:</label>
+                            <select id="investmentHorizon">
+                                <option class='investment-horizon-option' value="default" disabled hidden selected>How many years are you planning to invest for?</option>
+                                <option class='investment-horizon-option' name='horizonOption' value="ultraShortTerm">Less than 1 year</option>
+                                <option class='investment-horizon-option' name='horizonOption' value="shortTerm">Between 1 and 3 years</option>
+                                <option class='investment-horizon-option' name='horizonOption' value="mediumTerm">Between 3 and 10 years</option>
+                                <option class='investment-horizon-option' name='horizonOption' value="longTerm">More than 10 years</option>
+                            </select>
+                        </div>
+
+                        <div class="radio-group">
+                            <label for="radio-group" id="riskTolerance">What is your tolerance for risk?:</label>
+                            <label class="riskToleranceButton">
+                                <input type="radio" name="radioButton" value="lowest">
+                                As little as possible
+                                <span></span>
+                            </label>
+                            <label class="riskToleranceButton">
+                                <input type="radio" name="radioButton" value="low">
+                                Low
+                                <span></span>
+                            </label>
+                            <label class="riskToleranceButton">
+                                <input type="radio" name="radioButton" value="average">
+                                Average
+                                <span></span>
+                            </label>
+                            <label class="riskToleranceButton">
+                                <input type="radio" name="radioButton" value="high">
+                                High
+                                <span></span>
+                            </label>
+                        </div>
+
+                        <br><br>
+
+                        <button type="button" id="submit-investing-profile">Submit</button>                  
+                    </form>
+
+                    <!--Start of the investment list output-->
+                    <div class="outputInvestments">
+                        <p class="outputInvestmentText">Here are some examples of investment products that you could start your search with:</p>
+                        <div class="outputInvestmentsList"></div>
+                        <!-- Mutual Funds will be entered here with JavaScript, depending on user input from Investment Horizon and Risk Tolerance choices -->
+                    </div>
+                </main>
+        
+        <footer id='main-footer'>
+            Disclaimer: Not intended as all-inclusive investing recommendations. This is simply to provide examples of products that could be relevant to general investors' situations. All products are products of The Vanguard Group, but each is liekly to have similar products at any major investment management firm, such as Charles Schwabb, Fidelity, BlackRock, etc.
+        </footer>
+    
+        <div style='margin-top:110px'></div>
+    <script src='main.js'></script>
+</body>
+</html>
